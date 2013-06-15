@@ -129,3 +129,23 @@ html>body .pagination { padding: 0; }
 	float: left;
 }
 /* End Fix */
+
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -127px; 
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+.page-wrap:after {
+  /* .push must be the same height as footer */
+  height: 127px; 
+}
