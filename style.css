@@ -21,9 +21,9 @@ body { background: #fff; font-family: Arial, Helvetica, sans-serif; font-size: 1
 	h1.logo span { display: none; }
 	
 	#nav li#menu-1, #nav li#menu-2 { padding: 0 45px 0 0; }
-	#nav li#menu-4 { padding: 0 0 0 265px; }
+	#nav li#menu-4 { margin: 0 0 0 265px; }
 	#nav li#menu-5, #nav li#menu-6 { padding: 0 0 0 5px; }
-	#nav li.active a { color: #ed1c24; }
+	#nav li.active a { background: url(img/menu-hover-bg.jpg) repeat-x; }
 	
 	#slides  { display:none; }
 	.slidesjs-stop { display: none !important; }
@@ -87,8 +87,10 @@ html>body .pagination { padding: 0; }
 
 .menu, .menu ul li {
 	color: #000;
-	/*background: #234;*/
 }
+
+.menu ul a { background-color: #efefef; }
+.menu ul a:hover { background-color: #e7e7e7 !important; background-image: none !important; }
 
 .menu ul {
 	width: 11em;
@@ -103,11 +105,11 @@ html>body .pagination { padding: 0; }
 }
 
 .menu a:hover, .menu li:hover>a {
-	color: #ed1c24;
+	background: url(img/menu-hover-bg.jpg) repeat-x;
 }
 
 .menu li li {	/* create borders around each item */
-	border: 1px solid #ccc;
+	margin: 0 0 1px;
 }
 .menu ul>li + li {	/* and remove the top border on all but first item in the list */
 	border-top: 0;
