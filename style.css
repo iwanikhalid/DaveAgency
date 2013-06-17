@@ -5,7 +5,7 @@ ul, li { list-style: none; }
 img { border: none; }
 
 /******** STRUCTURE & SPECIFICS *****************/
-body { background: #fff; font-family: Arial, Helvetica, sans-serif; font-size: 13px; color: #333; text-align: center; }
+body { background: #fff; font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #666; text-align: center; }
 
 .wrap { padding: 0; width: 980px; margin: 0 auto; text-align: left; }
 
@@ -30,6 +30,16 @@ body { background: #fff; font-family: Arial, Helvetica, sans-serif; font-size: 1
 	
 	.quickies { padding: 30px 0; }
 	.quickies li { display: inline-block; margin: 0 6px; }
+	body.page #content { padding: 0 0 0 16px; margin: 110px 0 40px; font-size: 14px; }
+	body.page #content p { line-height: 20px; margin: 0 0 15px; }
+	.sideCol { width: 406px; }
+	.mainCol { width: 558px; }
+	body.about .mainCol p { padding: 0 110px 0 19px; }
+	body.service-center-workshop .sideCol { width: 581px; }
+	body.service-center-workshop .mainCol { width: 383px; }
+	table.location td + td { vertical-align: top; padding: 0 15px 0 30px; }
+	table.location td { padding: 0 0 30px; }
+
 
 	#footer .wrap { padding: 25px 0 0; text-align: center; color: #3f3f3f; }
 	#footer p { font-size: 16px; font-weight: bold; }
@@ -52,25 +62,24 @@ a:hover { text-decoration: underline; }
 
 img.floatl { margin: 0 10px 0 0; }
 img.floatr { margin: 0 0 0 10px; }
+img.thumbnail { padding: 4px; -webkit-box-shadow: 0 0 10px rgba(101, 101, 101, 0.5); -moz-box-shadow: 0 0 10px rgba(101, 101, 101, 0.5); box-shadow: 0 0 10px rgba(101, 101, 101, 0.5); }
 
 .floatl { float: left; }
 .floatr { float: right; }
 .alignr { text-align: right; }
 .alignl { text-align: left; }
 .alignc { text-align: center; }
-.alignj { text-align: justify; color: #999; font-size: 0.9em; }
-.marg { margin: 0 0 10px 0; }
-.reset, p.reset { margin: 0; }
 
 h1,h2,h3,h4,h5,h6 { font-weight: bold; text-rendering: optimizeLegibility; } /* www.aestheticallyloyal.com/public/optimize-legibility/ */ 
 html { -webkit-font-smoothing: antialiased; } /* maxvoltar.com/archive/-webkit-font-smoothing */
 
-h1 { font-size: 2.2em; letter-spacing: -2px; }
-h2 { font-size: 1.5em; letter-spacing: -1px; }
-h3 { font-size: 1.1em; text-transform: uppercase; letter-spacing: -0.5px; }
+h1 { font-size: 2em; }
+h2 { font-size: 1.5em; }
+h3 { font-size: 1.1em; }
 h4 { font-size: 0.9em; }
 h5 { font-size: 0.7em; }
 h6 { font-size: 0.5em; }
+h1.page-title { text-transform: uppercase; color: #333; }
 
 /*************** Pagination styles */
 
@@ -98,10 +107,11 @@ html>body .pagination { padding: 0; }
 
 .menu a {
 	text-decoration: none;
-	color: #000;
+	color: #333;
 	padding: .4em 1em;
 	display: block;
 	position: relative;
+	font-size: 13px;
 }
 
 .menu a:hover, .menu li:hover>a {
