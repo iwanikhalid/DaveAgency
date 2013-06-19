@@ -37,7 +37,7 @@ if(isset($_POST['email'])) {
         echo "We are very sorry, but there were error(s) found with the form you submitted. ";
         echo "These errors appear below.<br /><br />";
         echo $error."<br /><br />";
-        echo "Please fix these errors.<br /><br />";
+        echo "Please go back and fix these errors.<br /><br />";
         die();
     }
      
@@ -89,7 +89,7 @@ $headers = 'From: '.$email."\r\n".
  
 <!-- include your own success html here -->
  
-Thank you for contacting us. We will be in touch with you very soon.
+<h1>Thank you for contacting us. We will be in touch with you very soon.</h1>
  
 <?php
 } 
