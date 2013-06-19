@@ -37,8 +37,11 @@ body { background: #fff; font-family: Arial, Helvetica, sans-serif; font-size: 1
 	body.about .mainCol p { padding: 0 110px 0 19px; }
 	body.service-center-workshop .sideCol { width: 581px; }
 	body.service-center-workshop .mainCol { width: 383px; }
+	body.contact .sideCol { padding: 0 0 0 60px; width: 346px; }
+	body.contact .mainCol { padding: 0 40px 0 0; width: 518px; }
 	table.location td + td { vertical-align: top; padding: 0 15px 0 30px; }
 	table.location td { padding: 0 0 30px; }
+	
 
 
 	#footer .wrap { padding: 25px 0 0; text-align: center; color: #3f3f3f; }
@@ -63,6 +66,7 @@ a:hover { text-decoration: underline; }
 img.floatl { margin: 0 10px 0 0; }
 img.floatr { margin: 0 0 0 10px; }
 img.thumbnail { padding: 4px; -webkit-box-shadow: 0 0 10px rgba(101, 101, 101, 0.5); -moz-box-shadow: 0 0 10px rgba(101, 101, 101, 0.5); box-shadow: 0 0 10px rgba(101, 101, 101, 0.5); }
+img.single-logo { margin: 15px 0 25px 0; }
 
 .floatl { float: left; }
 .floatr { float: right; }
@@ -70,7 +74,7 @@ img.thumbnail { padding: 4px; -webkit-box-shadow: 0 0 10px rgba(101, 101, 101, 0
 .alignl { text-align: left; }
 .alignc { text-align: center; }
 
-h1,h2,h3,h4,h5,h6 { font-weight: bold; text-rendering: optimizeLegibility; } /* www.aestheticallyloyal.com/public/optimize-legibility/ */ 
+h1,h2,h3,h4,h5,h6 { color: #333; font-weight: bold; text-rendering: optimizeLegibility; } /* www.aestheticallyloyal.com/public/optimize-legibility/ */ 
 html { -webkit-font-smoothing: antialiased; } /* maxvoltar.com/archive/-webkit-font-smoothing */
 
 h1 { font-size: 2em; }
@@ -80,6 +84,10 @@ h4 { font-size: 0.9em; }
 h5 { font-size: 0.7em; }
 h6 { font-size: 0.5em; }
 h1.page-title { text-transform: uppercase; color: #333; }
+.subtitle { background: #ccc; padding: 5px 10px; }
+body.contact .sideCol h2 { padding: 5px 10px; }
+
+iframe { border: 0; }
 
 /*************** Pagination styles */
 
