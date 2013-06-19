@@ -28,7 +28,7 @@ font-weight: bold;
 if(isset($_POST['email'])) {
      
     // EDIT THE 2 LINES BELOW AS REQUIRED
-    $email_to = "iwanikhalid@gmail.com";
+    $email_to = "dave_agency@hotmail.com";
     $email_subject = "A feedback from Dave's Agency website";
      
      
