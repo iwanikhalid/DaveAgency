@@ -12,5 +12,5 @@ Contact Us http://bcoffee-projects.com/work/davesagency/xhtml/contact.html
 
 Jinbei 9 Seater http://bcoffee-projects.com/work/davesagency/xhtml/jinbei-9-seater.html  
 Jinbei 14/15 Seater http://bcoffee-projects.com/work/davesagency/xhtml/jinbei-14-15-seater.html  
-Zotye Nomad I Seater http://bcoffee-projects.com/work/davesagency/xhtml/nomad-1.html  
-Zotye Nomad II Seater http://bcoffee-projects.com/work/davesagency/xhtml/nomad-2.html  
+Zotye Nomad I Seater http://bcoffee-projects.com/work/davesagency/xhtml/zotye-nomad-1.html  
+Zotye Nomad II Seater http://bcoffee-projects.com/work/davesagency/xhtml/zotye-nomad-2.html  
