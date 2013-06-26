@@ -52,8 +52,14 @@ body { background: #fff; font-family: Arial, Helvetica, sans-serif; font-size: 1
 	.page-image { position: relative; margin: 0 0 18px 0; }
 	.new-car .page-image { height: 387px; width: 100%; background: url(img/new-car/9-seater-picture.jpg) no-repeat; }
 	.jinbei-14-15-seater .page-image { background: url(img/new-car/14-15-seater-picture.jpg) no-repeat; }
+	.zotye-nomad-1 .page-image { margin-bottom: 48px; height: 446px; background: url(img/new-car/nomad-1-picture.jpg) no-repeat; }
+	.zotye-nomad-2 .page-image { margin-bottom: 15px; height: 363px; background: url(img/new-car/nomad-2-picture.jpg) no-repeat; }
 	.page-image h2 { position: absolute; top: 357px; }
 	.page-image a { position: absolute; top: 327px; right: 0; }
+	.zotye-nomad-1 .page-image h2 { top: 445px; }
+	.zotye-nomad-1 .page-image a { top: 418px; }
+	.zotye-nomad-2 .page-image h2 { top: 325px; }
+	.zotye-nomad-2 .page-image a { top: 300px; }
 	
 	#footer .wrap { padding: 25px 0 0; text-align: center; color: #3f3f3f; }
 	#footer p { font-size: 16px; font-weight: bold; }
@@ -97,6 +103,7 @@ h6 { font-size: 0.5em; }
 h1.page-title { text-transform: uppercase; color: #333; }
 h3.subtitle { background: #ccc; padding: 5px 10px; }
 h2.topic { padding-bottom: 6px; width: 100%; border-bottom: 1px solid #666; font-size: 1.4em; text-transform: uppercase; color: #333; }
+h2.topic.upline { border-top: 1px solid #ccc; padding-top: 6px; margin-top: 45px; }
 h2.topic.noline { border: 0; }
 h3.subtitle { margin: 0; text-transform: uppercase; color: #333; padding: 4px 10px; }
 body.contact .sideCol h2 { padding: 5px 10px; }
@@ -129,15 +136,18 @@ hr:after {
 .pagination a.less, .pagination a.more  { color: #6f8b0f; background: none; border: none; }
 html>body .pagination { padding: 0; }	
 
-.spec-table td { background: #f2f3f3; border: 1px solid #fff; padding: 8px 0 8px 15px; }
+.spec-table td { background: #f2f3f3; border: 1px solid #fff; padding: 8px 8px 8px 15px; }
 .spec-table td.spec-topic { padding: 5px 0 5px 15px; font-weight: bold; font-size: 15px; color: #333; background: url(img/spec-table-topic-bg.jpg) repeat-x; }
-.spec-table td.spec-notice { padding: 10px 0 30px 15px; border-bottom: 1px solid #ccc; background: #fff; font-size: 13px; }
+.spec-table td.spec-notice { padding: 10px 0 40px 15px; border-bottom: 1px solid #ccc; background: #fff; font-size: 13px; }
+.spec-table tr.spec-type td { font-weight: bold; color: #333; text-align: center; border-top: 1px solid #666; }
+.spec-table tr.spec-center { text-align: center; font-weight: bold; }
 .spec-credit  { border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; padding: 15px 0; }
 .spec-credit td { padding: 5px 0 5px 10px; font-size: 12px; border-right: 1px solid #ccc; }
 .spec-credit td:last-child { border: 0; }
 .spec-credit h2 { font-size: 16px; margin: 0;  }
 .spec-credit ul  { margin: 0 0 0 15px; }
 .spec-credit ul li { list-style-type: square;  }
+
 
 /*************** Menu */
 
