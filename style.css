@@ -39,11 +39,22 @@ body { background: #fff; font-family: Arial, Helvetica, sans-serif; font-size: 1
 	body.service-center-workshop .mainCol { width: 383px; }
 	body.contact .sideCol { padding: 0 0 0 60px; width: 346px; }
 	body.contact .mainCol { padding: 0 40px 0 0; width: 518px; }
+	body.new-car .sideCol { width: 242px; }
+	body.new-car .mainCol { width: 711px; padding: 0 11px 0 0; }
 	table.location td + td { vertical-align: top; padding: 0 15px 0 30px; }
 	table.location td { padding: 0 0 30px; }
+	ul.sideMenu li { margin: 0 0 1px 0; }
+	ul.sideMenu li a { color: #333; padding: 5px 0 5px 50px; font-size: 16px; display: block; background: #ddd; background: #ddd url(img/sidemenu-bg.jpg) no-repeat right center;  }
+	ul.sideMenu li span { padding: 5px 0 5px 50px;  font-weight: bold; text-transform: uppercase; display: block; background: #ccc url(img/sidemenu-bg.jpg) no-repeat right center;   }
+	ul.sideMenu li a:hover, ul.sideMenu li.active a { text-decoration: none; background: #ddd url(img/sidemenu-hover-bg.jpg) no-repeat right top; }
+
+	.page-wrapper { width: 685px; }
+	.page-image { position: relative; margin: 0 0 18px 0; }
+	.new-car .page-image { height: 387px; width: 100%; background: url(img/new-car/9-seater-picture.jpg) no-repeat; }
+	.jinbei-14-15-seater .page-image { background: url(img/new-car/14-15-seater-picture.jpg) no-repeat; }
+	.page-image h2 { position: absolute; top: 357px; }
+	.page-image a { position: absolute; top: 327px; right: 0; }
 	
-
-
 	#footer .wrap { padding: 25px 0 0; text-align: center; color: #3f3f3f; }
 	#footer p { font-size: 16px; font-weight: bold; }
 	#footer p:nth-child(2) { color: #8f8f8f; font-weight: normal; }
@@ -84,10 +95,28 @@ h4 { font-size: 0.9em; }
 h5 { font-size: 0.7em; }
 h6 { font-size: 0.5em; }
 h1.page-title { text-transform: uppercase; color: #333; }
-.subtitle { background: #ccc; padding: 5px 10px; }
+h3.subtitle { background: #ccc; padding: 5px 10px; }
+h2.topic { padding-bottom: 6px; width: 100%; border-bottom: 1px solid #666; font-size: 1.4em; text-transform: uppercase; color: #333; }
+h2.topic.noline { border: 0; }
+h3.subtitle { margin: 0; text-transform: uppercase; color: #333; padding: 4px 10px; }
 body.contact .sideCol h2 { padding: 5px 10px; }
 
 iframe { border: 0; }
+
+hr {
+background-color:#ccc;
+border-width:0;
+color:#ccc;
+height:1px;
+line-height:0;
+margin: 0 0 15px 0;
+page-break-after:always;
+text-align:center;
+width:100%;
+}
+
+hr:after {
+}
 
 /*************** Pagination styles */
 
@@ -100,14 +129,24 @@ iframe { border: 0; }
 .pagination a.less, .pagination a.more  { color: #6f8b0f; background: none; border: none; }
 html>body .pagination { padding: 0; }	
 
+.spec-table td { background: #f2f3f3; border: 1px solid #fff; padding: 8px 0 8px 15px; }
+.spec-table td.spec-topic { padding: 5px 0 5px 15px; font-weight: bold; font-size: 15px; color: #333; background: url(img/spec-table-topic-bg.jpg) repeat-x; }
+.spec-table td.spec-notice { padding: 10px 0 30px 15px; border-bottom: 1px solid #ccc; background: #fff; font-size: 13px; }
+.spec-credit  { border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; padding: 15px 0; }
+.spec-credit td { padding: 5px 0 5px 10px; font-size: 12px; border-right: 1px solid #ccc; }
+.spec-credit td:last-child { border: 0; }
+.spec-credit h2 { font-size: 16px; margin: 0;  }
+.spec-credit ul  { margin: 0 0 0 15px; }
+.spec-credit ul li { list-style-type: square;  }
+
 /*************** Menu */
 
 .menu, .menu ul li {
 	color: #000;
 }
 
-.menu ul a { background-color: #efefef; }
-.menu ul a:hover { background-color: #e7e7e7 !important; background-image: none !important; }
+#nav li.active li a, .menu ul a { background-image: none; background-color: #efefef; }
+.menu ul a:hover, #nav li.child-active a { background-color: #e7e7e7 !important; background-image: none !important; }
 
 .menu ul {
 	width: 11em;
