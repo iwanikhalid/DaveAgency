@@ -39,14 +39,14 @@ body { background: #fff; font-family: Arial, Helvetica, sans-serif; font-size: 1
 	body.service-center-workshop .mainCol { width: 383px; }
 	body.contact .sideCol { padding: 0 0 0 60px; width: 346px; }
 	body.contact .mainCol { padding: 0 40px 0 0; width: 518px; }
-	body.new-car .sideCol { width: 242px; }
-	body.new-car .mainCol { width: 711px; padding: 0 11px 0 0; }
+	body.new-car .sideCol, body.used-car .sideCol { width: 242px; }
+	body.new-car .mainCol, body.used-car .mainCol { width: 711px; padding: 0 11px 0 0; }
 	table.location td + td { vertical-align: top; padding: 0 15px 0 30px; }
 	table.location td { padding: 0 0 30px; }
 	ul.sideMenu li { margin: 0 0 1px 0; }
 	ul.sideMenu li a { color: #333; padding: 5px 0 5px 50px; font-size: 16px; display: block; background: #ddd; background: #ddd url(img/sidemenu-bg.jpg) no-repeat right center;  }
 	ul.sideMenu li span { padding: 5px 0 5px 50px;  font-weight: bold; text-transform: uppercase; display: block; background: #ccc url(img/sidemenu-bg.jpg) no-repeat right center;   }
-	ul.sideMenu li a:hover, ul.sideMenu li.active a { text-decoration: none; background: #ddd url(img/sidemenu-hover-bg.jpg) no-repeat right top; }
+	ul.sideMenu li a:hover, ul.sideMenu li.active a { text-decoration: none; background: #ebebeb url(img/sidemenu-hover-bg.jpg) no-repeat right top; }
 
 	.page-wrapper { width: 685px; }
 	.page-image { position: relative; margin: 0 0 18px 0; }
@@ -60,6 +60,14 @@ body { background: #fff; font-family: Arial, Helvetica, sans-serif; font-size: 1
 	.zotye-nomad-1 .page-image a { top: 418px; }
 	.zotye-nomad-2 .page-image h2 { top: 325px; }
 	.zotye-nomad-2 .page-image a { top: 300px; }
+	
+	.used-car .page-wrapper { padding: 15px 10px; }
+	.spec-info { padding: 10px 0 0; }
+	.spec-detail ul { margin: 0 0 20px 20px; }
+	.spec-detail ul li { list-style-type: square; }
+	.spec-price, .spec-ansurance { background: #ed1c24; text-align: center; color: #fff; padding: 10px 10px; width: 165px; font-size: 26px; font-weight: bold; }
+	.spec-ansurance { font-weight: normal; background: #999999; color: #fff; font-size: 16px; }
+	.spec-price em { display: inline-block; padding-top: 4px; font-size: 12px; font-weight: normal; }
 	
 	#footer .wrap { padding: 25px 0 0; text-align: center; color: #3f3f3f; }
 	#footer p { font-size: 16px; font-weight: bold; }
@@ -106,6 +114,7 @@ h2.topic { padding-bottom: 6px; width: 100%; border-bottom: 1px solid #666; font
 h2.topic.upline { border-top: 1px solid #ccc; padding-top: 6px; margin-top: 45px; }
 h2.topic.noline { border: 0; }
 h3.subtitle { margin: 0; text-transform: uppercase; color: #333; padding: 4px 10px; }
+h2.spec-car-title { margin: 0; font-size: 1.4em; color: #ed1c24; text-transform: uppercase; }
 body.contact .sideCol h2 { padding: 5px 10px; }
 
 iframe { border: 0; }
@@ -127,11 +136,19 @@ hr:after {
 
 /*************** Pagination styles */
 
-.pagiwrap { text-align: center; margin: 20px 0; }
+.pagiwrap { background: #f0f0f0; text-align: center; padding: 15px; margin: 20px 0 0; }
 .pagiwrap p { color: #7a7a7a; margin: 20px 0; }
-.pagination a { padding: 2px 5px 2px 5px; margin: 2px 4px; border: 1px solid #dadada; text-decoration: none; color: #7a7a7a; background: #efefef; }
-.pagination a:hover, .pagination a:active { font-weight: bold; color: #6f8b0f; background-color: #dbdbdb; border: 1px solid #c9c9c9; }
-.pagination span.current { padding: 2px 5px 2px 5px; margin: 2px; font-weight: bold; color: #6f8b0f; background-color: #dbdbdb; border: 1px solid #c9c9c9;}	
+.pagination a { padding: 2px 5px 2px 5px; margin: 2px 4px; border: 1px solid #dadada; text-decoration: none; color: #696969; background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(top, #ffffff 1%, #e5e5e5 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#ffffff), color-stop(100%,#e5e5e5)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #ffffff 1%,#e5e5e5 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #ffffff 1%,#e5e5e5 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #ffffff 1%,#e5e5e5 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #ffffff 1%,#e5e5e5 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */  
+}
+.pagination a:hover, .pagination a:active { color: #000; background-color: #dbdbdb; border: 1px solid #c9c9c9; }
+.pagination span.current { padding: 2px 5px 2px 5px; margin: 2px; font-weight: bold; color: #fff; background-color: #ff0000; border: 1px solid #d2d2d2;}	
 .pagination span.disabled { padding: 2px 5px 2px 5px; margin: 2px; color: #DDD; }
 .pagination a.less, .pagination a.more  { color: #6f8b0f; background: none; border: none; }
 html>body .pagination { padding: 0; }	
